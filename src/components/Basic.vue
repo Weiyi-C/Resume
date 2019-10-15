@@ -1,6 +1,6 @@
 <template>
   <b-container>
-    <b-row>
+    <b-row class="py-5">
       <b-col>
         <b-img-lazy center fluid :src=photoSrc alt="郑维一的照片">郑维一的照片</b-img-lazy>
       </b-col>
