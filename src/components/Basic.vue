@@ -1,6 +1,6 @@
 <template>
-  <b-container>
-    <b-row class="py-5">
+  <b-container class="my-4">
+    <b-row class="py-5 row">
       <b-col>
         <b-img-lazy center fluid :src=photoSrc alt="郑维一的照片">郑维一的照片</b-img-lazy>
       </b-col>
@@ -27,7 +27,7 @@
               <td>身&#12288;高</td>
               <td>180cm</td>
               <td>体&#12288;重</td>
-              <td>62kg</td>
+              <td>65kg</td>
             </tr>
             <tr>
               <td>电&#12288;话</td>
@@ -37,7 +37,7 @@
             </tr>
             <tr>
               <td>E-mail</td>
-              <td>weiyi@epearth.net</td>
+              <td>weiyi@zhengweiyi.cn</td>
               <td>微&#12288;博</td>
               <td>@曦璞维一</td>
             </tr>
@@ -67,3 +67,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.row {
+  background: #FFF;
+  box-shadow: 0 0 5 2 rgba(0,0,0,0.4)
+}
+</style>

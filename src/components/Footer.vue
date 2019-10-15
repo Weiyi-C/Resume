@@ -1,17 +1,15 @@
 <template>
   <footer>
-    <b-container>
-      <b-row>
+    <b-container class="pt-4 pb-3">
+      <b-row class="py-2">
         <b-col v-for="title in foots" :key='title.index' >
           <span>{{ title.title }}</span>
-          <ul>
-            <li v-for="item in title.links" :key='item.index'>
+            <div v-for="item in title.links" :key='item.index'>
               <b-link :href='item.href' target='_blank' >{{ item.name }}</b-link>
-            </li>
-          </ul>
+            </div>
         </b-col>
       </b-row>
-      <b-row>
+      <b-row class="py-2">
         <b-col center>
           <b-link :href='copyright.icp.href' target='_blank'>{{ copyright.icp.name }}</b-link> |
           {{ copyright.cn }} <br />
@@ -28,7 +26,7 @@ export default {
     return {
       foots: [
         {
-          title: '友情链接',
+          title: '我的',
           links: [
             {
               name: 'GitHub 主页',
@@ -39,6 +37,15 @@ export default {
               href: 'https://blog.csdn.net/u011618035'
             }
           ]
+        },
+        {
+          title: '链接',
+          links: [
+            {
+              name: 'BootstrapVue',
+              href: 'https://bootstrap-vue.js.org/'
+            }
+          ]
         }
       ],
       copyright: {
@@ -47,9 +54,15 @@ export default {
           href: 'http://www.miitbeian.gov.cn/'
         },
         cn: '郑维一 © 版权所有',
-        en: 'Copyright © 2017-2019. ZhengWeiyi All rights reserved.'
+        en: 'Copyright © 2019. ZhengWeiyi All rights reserved.'
       }
     }
   }
 }
 </script>
+
+<style scoped>
+a {
+  color: #111
+}
+</style>

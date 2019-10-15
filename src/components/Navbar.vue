@@ -1,6 +1,6 @@
 <template>
   <header>
-    <b-navbar toggleabale="lg" type="dark" variant="success">
+    <b-navbar toggleabale="lg" type="dark" variant="success" class="shadow">
       <b-container>
         <b-navbar-brand href="../../">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="32" height="32" version="1.1" shape-rendering="geometricPrecision" fill-rule="evenodd" clip-rule="evenodd" focusable="false" role="img" class="d-block" data-v-2ccc01cb="">
@@ -54,3 +54,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.shadow {
+  box-shadow: 0 -5 10 1 rgba(0,0,0,0.4)
+}
+</style>
